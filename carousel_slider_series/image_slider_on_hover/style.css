@@ -1,0 +1,42 @@
+body {
+    font-family: "Poppins", sans-serif;
+  }
+  .container {
+    position: relative;
+  }
+  .currentImage {
+    width: 100%;
+  }
+  .thumbnail {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 0.5em;
+    overflow: hidden;
+    bottom: -25px;
+    opacity: 0;
+    transition: 0.5s opacity ease;
+    margin: 0 10px;
+  }
+  .thumbnail img {
+    width: 100%;
+    cursor: pointer;
+    opacity: 0.8;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+  }
+  .container:hover .thumbnail {
+    opacity: 1;
+  }
+  .imageDesc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.5rem;
+  }
+  
